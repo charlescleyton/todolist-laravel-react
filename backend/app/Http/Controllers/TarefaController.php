@@ -9,7 +9,6 @@ class TarefaController extends Controller
 {
     public function index(Request $request)
     {
-
         if ($request->has('concluida')) {
             $tarefas = Tarefa::where('concluida', $request->concluida)->get();
 
@@ -35,13 +34,14 @@ class TarefaController extends Controller
         ], 201);
     }
 
-    public function show($id)
+    public function show(int $id)
     {
         $tarefa = Tarefa::findOrFail($id);
+
         return response()->json($tarefa, 200);
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, int $id)
     {
         $tarefa = Tarefa::findOrFail($id);
         $tarefa->update($request->all());
@@ -51,7 +51,7 @@ class TarefaController extends Controller
         ], 200);
     }
 
-    public function destroy($id)
+    public function destroy(int $id)
     {
         $tarefa = Tarefa::findOrFail($id);
         $tarefa->delete();
