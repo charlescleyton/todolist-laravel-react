@@ -7,7 +7,7 @@ Além disso, a aplicação permite buscar repositórios públicos de um usuário
 
 * [Pré-requisitos](#pr%C3%A9-requisitos)
 * [Instalação](#instala%C3%A7%C3%A3o)
-* [Configuração](#Testes PHPUnit)
+* [Configuração](#Configura%C3%A7%C3%A3o)
 * [Testes PHPUnit](#Testes-PHPUnit)
 * [Endpoints da API](#endpoints-da-api)
 * [Componentes do Frontend](#componentes-do-frontend)
