@@ -35,6 +35,15 @@ Diretório:
    `php artisan key:generate `
 4. Crie o banco de dados MySQL e configure-o no arquivo `.env`.
    No arquivo `.env`, configure as seguintes variáveis de ambiente para o Laravel:
+
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=todolist
+   DB_USERNAME=Seu usuario
+   DB_PASSWORD=Sua senha
+   ```
 5. Rode as migrações
    `php artisan migrate`
 6. Caso queira inserir dados ficticios no banco criado anteriormente rode os seeders:
